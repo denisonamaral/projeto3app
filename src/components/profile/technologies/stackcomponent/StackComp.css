@@ -1,0 +1,11 @@
+.stackcomp {
+  margin-left: 4px;
+  margin-right: 4px;
+  height: 35px;
+  width: 120px;
+  background-color: #c5c5c5;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

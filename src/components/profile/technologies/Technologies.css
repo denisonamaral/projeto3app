@@ -1,0 +1,22 @@
+.stacks {
+  margin-top: 24px;
+  border-radius: 4px;
+  width: 700px;
+  height: 250px;
+  background-color: rgba(219, 219, 219, 0.5);
+}
+
+.renderStacks {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  align-content: stretch;
+  height: 180px;
+  width: 700px;
+}
+
+.stacks h3 {
+  margin: 14px;
+}

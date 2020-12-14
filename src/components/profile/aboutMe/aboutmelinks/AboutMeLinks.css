@@ -1,0 +1,16 @@
+.aboutlinks {
+  width: 100px;
+  height: 50px;
+  border-radius: 4px;
+  background-color: rgba(158, 158, 158, 0.5);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+  margin-left: 14px;
+}
+.aboutlinks img {
+  margin-right: 4.5px;
+}
