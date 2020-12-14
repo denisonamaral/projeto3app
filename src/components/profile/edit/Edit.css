@@ -1,0 +1,9 @@
+.buttonEdit button {
+  margin-top: 20px;
+  height: 60px;
+  width: 200px;
+  margin-bottom: 100px;
+  border-radius: 20px;
+  font-size: 20px;
+  font-weight: 700;
+}

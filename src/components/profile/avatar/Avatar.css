@@ -1,0 +1,9 @@
+.avatarImg {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 100%;
+  border: 5px solid white;
+  position: relative;
+  margin-top: -110px;
+}
