@@ -1,0 +1,7 @@
+.coverImg {
+  margin-top: 7rem;
+  width: 700px;
+  height: 250px;
+  border-radius: 4px;
+  object-fit: cover;
+}

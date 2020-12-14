@@ -1,0 +1,14 @@
+.projects {
+  margin-top: 25px;
+  border-radius: 4px;
+  width: 700px;
+  height: 200px;
+  background-color: rgba(219, 219, 219, 0.5);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: stretch;
+}
+

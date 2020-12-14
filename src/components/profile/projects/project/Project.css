@@ -1,0 +1,31 @@
+.project {
+  width: 180px;
+  height: 130px;
+  background-color: #c5c5c5;
+  margin: 10px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: stretch;
+}
+
+.project h4 {
+}
+
+.project h3,
+h4 {
+  margin: 4px 0 2px 0;
+}
+
+.project a {
+  margin: 4px;
+  text-decoration: none;
+}
+.project:hover {
+  transform: translate(-6px, -10px);
+  transition: 0.2s;
+  border-color: #5bc0eb;
+}
