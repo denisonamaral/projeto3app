@@ -5,6 +5,7 @@ import * as Palette from "./colors";
 // Components
 import Sidebar from "./components/Sidebar/Sidebar";
 import MainView from "./components/MainView/MainView";
+import { AuthContextComponent } from "./contexts/authContext";
 
 const App = () => {
   const backgroundImage = "images/mountain.jpg";
@@ -67,14 +68,16 @@ const App = () => {
 
   return (
     <s.App>
-      <Sidebar
-        backgroundImage={backgroundImage}
-        sidebarHeader={sidebarHeader}
-        menuItems={menuItems}
-        fonts={fonts}
-        colorPalette={Palette.silver}
-      />
-      <MainView />
+      <AuthContextComponent>
+        <Sidebar
+          backgroundImage={backgroundImage}
+          sidebarHeader={sidebarHeader}
+          menuItems={menuItems}
+          fonts={fonts}
+          colorPalette={Palette.silver}
+        />
+        <MainView />
+      </AuthContextComponent>
     </s.App>
   );
 };
