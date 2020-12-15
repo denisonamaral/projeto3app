@@ -5,7 +5,7 @@ const Country = (props) => {
   const country = props.match.params.country;
   const countries = {
     amsterdam: {
-      description: "Conteúdo aqui",
+      description: <a href="http://https://www.ironhack.com/en/amsterdam" />,
     },
     berlin: {
       description: "Conteúdo aqui",
