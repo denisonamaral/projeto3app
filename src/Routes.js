@@ -9,6 +9,10 @@ import Country from "./components/MainView/Destinations/Country/Country";
 import Blog from "./components/MainView/Blog/Blog";
 import Services from "./components/MainView/Services/Services";
 import Contacts from "./components/MainView/Contacts/Contacts";
+
+import Auth from "./routeComponents/auth/Login";
+import Enroll from "./routeComponents/auth/Signup";
+
 import Profile from "./components/profile/Profile";
 import Login from "./routeComponents/auth/Login";
 import Signup from "./routeComponents/auth/Signup";
@@ -17,7 +21,9 @@ import EditProfile from "./components/editprofile/EditProfile";
 const Routes = () => {
   return (
     <Switch>
-      <Route exact path="/" component={Home} />
+      <Route exact path="/" component={Signup} />
+      <Route exact path="/auth/login" component={Auth} />
+      <Route exact path="/auth/signup" component={Enroll} />
       <Route exact path="/about" component={About} />
       <Route exact path="/destinations" component={Destinations} />
       <Route exact path="/destinations/:country" component={Country} />
