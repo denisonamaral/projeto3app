@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import api from "../../apis/api";
+import "./Signup.css";
 
 function Signup(props) {
 	const [state, setState] = useState({ name: "", password: "", email: "" });

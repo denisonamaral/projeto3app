@@ -1,0 +1,37 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400);
+body {
+    color:#6a6f8c;
+	background:#c8c8c8;
+  -webkit-font-smoothing: antialiased;
+  font: normal 14px Roboto,arial,sans-serif;
+  
+}
+
+
+.form {
+    width: 30%px;
+    height: 50%;
+    opacity: 0.7;
+
+}
+
+.form-group {
+    padding: 20px;
+}
+
+.container {
+
+    background-color: #a9b0ba;
+    width: 40%;
+    height: 100%;
+    border-radius: 10px;
+    padding-top: 30px;    
+    
+  
+}
+
+input {
+    padding-top: 10px;
+}
+
+

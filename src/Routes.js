@@ -24,8 +24,8 @@ const Routes = () => {
       <Route exact path="/services" component={Services} />
       <Route exact path="/contacts" component={Contacts} />
       <Route exact path="/meuperfil" component={Profile} />
-      <Route exact path="/signup" component={Login} />
-      <Route exact path="/login" component={Signup} />
+      <Route exact path="/login" component={Login} />
+      <Route exact path="/signup" component={Signup} />
     </Switch>
   );
 };

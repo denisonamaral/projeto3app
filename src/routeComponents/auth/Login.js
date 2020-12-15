@@ -1,8 +1,10 @@
 import React, { useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import api from "../../apis/api";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 import { AuthContext } from "../../contexts/authContext";
+import "./Login.css";
 
 function Login(props) {
 	const authContext = useContext(AuthContext);
@@ -41,35 +43,39 @@ function Login(props) {
 	}
 
 	return (
-		<form onSubmit={handleSubmit}>
+	 <div className="container">
+		<form className="form" onSubmit={handleSubmit}>
 			<h1 className="text-center">Login</h1>
-
+			
 			<div className="text-center form-group">
-				<label htmlFor="signupFormEmail">E-mail Address</label>
-				<input
+				<label htmlFor="signupFormEmail"></label>
+				<input className="input"
 					type="email"
 					name="email"
 					id="signupFormEmail"
 					value={state.email}
 					error={errors.email}
 					onChange={handleChange}
+					placeholder="E-mail Address"
 				/>
 			</div>
 
 			<div className="text-center form-group">
-				<label htmlFor="signupFormPassword">Password</label>
-				<input
+				<label htmlFor="signupFormPassword"></label>
+				<input className="input"
 					type="password"
 					name="password"
 					id="signupFormPassword"
 					value={state.password}
 					error={errors.password}
 					onChange={handleChange}
+					placeholder="Password"
+
 				/>
 			</div>
 
 			<div className="text-center form-group">
-				<button type="submit">Login!</button>
+				<button type="submit" className="btn btn-primary">Login!</button>
 			</div>
 			<div className="text-center form-group">
 				<Link to="/auth/signup">
@@ -77,7 +83,10 @@ function Login(props) {
 				</Link>
 			</div>
 		</form>
-	);
+		</div>
+			
+		
+		);
 }
 
 export default Login;
