@@ -3,7 +3,9 @@ import "./AboutMe.css";
 import linkedin from "../icons/linkedin.svg";
 import github from "../icons/github.svg";
 import AboutMelinks from "./aboutmelinks/AboutMeLinks";
+
 function AboutMe() {
+
   return (
     <div className="aboutme">
       <h3>Sobre mim</h3>
