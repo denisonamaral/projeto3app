@@ -1,0 +1,20 @@
+.editprofile {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: stretch;
+  overflow: scroll;
+  max-height: 80vh;
+}
+
+.select {
+  width: 400px;
+  margin-top: 20px;
+  margin-bottom: 200px;
+}
+
+.editprofile h6 {
+  margin-top: 10px;
+}
