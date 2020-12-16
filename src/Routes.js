@@ -9,6 +9,7 @@ import Country from "./components/MainView/Destinations/Country/Country";
 import Blog from "./components/MainView/Blog/Blog";
 import Services from "./components/MainView/Services/Services";
 import Contacts from "./components/MainView/Contacts/Contacts";
+import User from "./components/user/User";
 
 import Auth from "./routeComponents/auth/Login";
 import Enroll from "./routeComponents/auth/Signup";
@@ -21,6 +22,7 @@ import EditProfile from "./components/editprofile/EditProfile";
 const Routes = () => {
   return (
     <Switch>
+      <Route exact path="/ironteam" component={User} />
       <Route exact path="/" component={Signup} />
       <Route exact path="/auth/login" component={Auth} />
       <Route exact path="/auth/signup" component={Enroll} />
