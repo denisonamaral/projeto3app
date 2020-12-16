@@ -1,0 +1,24 @@
+.linkform {
+  height: 280px;
+  width: 300px;
+  background-color: rgba(161, 161, 161, 0.466);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  border-radius: 10px;
+}
+
+.linkdescription {
+  height: 200px;
+}
+
+input {
+  margin: 5px;
+}
+
+button {
+  margin: 5px;
+}
