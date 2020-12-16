@@ -6,13 +6,13 @@ import geoIcon from "../icons/geo-alt-fill.svg";
 import buildingIcon from "../icons/building.svg";
 import ironhack from "../icons/ironhacklogo.svg";
 
-function About() {
+function About(props) {
   return (
     <div>
       <div className="about">
-        <AboutCards icon={geoIcon} description="Rio de Janeiro" />
-        <AboutCards icon={ironhack} description="WDFT OCT2020" />
-        <AboutCards icon={buildingIcon} description="Microsoft" />
+        <AboutCards icon={geoIcon} description={props.city} />
+        <AboutCards icon={ironhack} description={props.cohort} />
+        <AboutCards icon={buildingIcon} description={props.institution} />
       </div>
     </div>
   );
