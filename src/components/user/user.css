@@ -1,6 +1,9 @@
 .profile-image {
-  height: auto;
+  height: 100px;
   width: 100px;
+  border-radius: 50%;
+  position: relative;
+  object-fit: cover;
 }
 
 .profile-container {
@@ -13,11 +16,12 @@
   line-height: 20px;
   overflow: scroll;
   max-height: 80vh;
-  border-radius: 50px;
   margin: 300px (cima e embaixo) 10px (lateral);
 }
 
 .person-profile {
+  height: 300px;
+  border-radius: 10px;
   width: 200px;
   margin-bottom: 50px;
   margin-right: 10px;
