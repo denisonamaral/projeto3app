@@ -190,7 +190,7 @@ function EditProfile(props) {
         placeholder="URL Github"
       />
       <Input
-        name="projects[project1].demo"
+        name="project1"
         onChange={onChangeForm}
         // value={editProfile.projects.project1.demo}
         label="Projeto #1"
