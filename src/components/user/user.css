@@ -1,0 +1,26 @@
+.profile-image {
+  height: auto;
+  width: 100px;
+}
+
+.profile-container {
+  width: 900px;
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  line-height: 20px;
+  overflow: scroll;
+  max-height: 80vh;
+  border-radius: 50px;
+  margin: 300px (cima e embaixo) 10px (lateral);
+}
+
+.person-profile {
+  width: 200px;
+  margin-bottom: 50px;
+  margin-right: 10px;
+  margin-left: 10px;
+  background-color: rgb(169, 189, 200);
+}

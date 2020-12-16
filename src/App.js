@@ -20,8 +20,8 @@ const App = () => {
   const menuItems = [
     { name: "Home", to: "/", icon: "/icons/home.svg", subMenuItems: [] },
     {
-      name: "Community",
-      to: "/about",
+      name: "Ironteam",
+      to: "/Ironteam",
       icon: "/icons/about.svg",
       subMenuItems: [],
     },
@@ -51,12 +51,6 @@ const App = () => {
       name: "Meu perfil",
       to: "/meuperfil",
       icon: "/icons/services.svg",
-      subMenuItems: [],
-    },
-    {
-      name: "IronTeam",
-      to: "/Ironteam",
-      icon: "/icons/contacts.svg",
       subMenuItems: [],
     },
   ];
