@@ -16,6 +16,8 @@ import Enroll from "./routeComponents/auth/Signup";
 import Profile from "./components/profile/Profile";
 import Login from "./routeComponents/auth/Login";
 import Signup from "./routeComponents/auth/Signup";
+import EditProfile from "./components/editprofile/EditProfile";
+import Link from "./components/links/Link";
 
 const Routes = () => {
   return (
@@ -30,6 +32,10 @@ const Routes = () => {
       <Route exact path="/services" component={Services} />
       <Route exact path="/contacts" component={Contacts} />
       <Route exact path="/meuperfil" component={Profile} />
+      <Route exact path="/signup" component={Login} />
+      <Route exact path="/login" component={Signup} />
+      <Route exact path="/meuperfil/edit" component={EditProfile} />
+      <Route exact path="/linksuteis" component={Link} />
     </Switch>
   );
 };
