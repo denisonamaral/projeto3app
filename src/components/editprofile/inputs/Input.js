@@ -8,7 +8,13 @@ function Input(props) {
       <label>
         <strong>{props.label}</strong>
       </label>
-      <input className="form-control" placeholder={props.placeholder} />
+      <input
+        name={props.name}
+        value={props.value}
+        onChange={props.onChange}
+        className="form-control"
+        placeholder={props.placeholder}
+      />
     </div>
   );
 }

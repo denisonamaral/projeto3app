@@ -1,14 +1,10 @@
 import React from "react";
 import "./Avatar.css";
 
-function Avatar() {
+function Avatar(props) {
   return (
     <div>
-      <img
-        className="avatarImg"
-        src="https://i.imgur.com/T5xZT1h.jpg"
-        alt="avatar-logo"
-      />
+      <img className="avatarImg" src={props.picture} alt="avatar-logo" />
     </div>
   );
 }
