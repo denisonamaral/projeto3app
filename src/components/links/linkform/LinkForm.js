@@ -23,9 +23,11 @@ function LinkForm(props) {
   async function enviarBancoDados() {
     try {
       const postBancoDeDados = await api.post("/linkcreate", state);
-      // const pegarLinks = await api.get("/linksall");
-      // console.log(pegarLinks.data.pegaAllLinks);
-      // props.setXXX(pegarLinks.data.pegaAllLinks);
+      // console.log(postBancoDeDados);
+      const pegarLinks = await api.get("/linksall");
+      // console.log("oi");
+      // console.log("NAO CONSOLA", pegarLinks.data.pegaAllLinks);
+      props.setXXX(pegarLinks.data.pegaAllLinks);
     } catch (err) {
       console.log("error LinkForm.js catch :", err);
     }

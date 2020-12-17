@@ -33,6 +33,7 @@ function Link() {
             name={elem.link}
             description={elem.description}
             link={elem.url}
+            setYYY={setState}
           />
         );
       })}

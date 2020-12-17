@@ -1,7 +1,15 @@
-import React from 'react';
+import React from "react";
+import "./Destination.css";
 
 const Destinations = () => {
-  return <h1>Destinations Page</h1>
-}
+  return (
+    <div className="container">
+      <iframe
+        className="responsive-iframe"
+        src="https://www.ironhack.com/en/amsterdam"
+      ></iframe>
+    </div>
+  );
+};
 
-export default Destinations
+export default Destinations;

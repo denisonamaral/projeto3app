@@ -19,6 +19,8 @@ import Login from "./routeComponents/auth/Login";
 import Signup from "./routeComponents/auth/Signup";
 import EditProfile from "./components/editprofile/EditProfile";
 import Link from "./components/links/Link";
+import ProfileDinamic from "./components/profiledinamic/ProfileDinamic";
+import IronWorld from "./components/ironworld/IronWorld";
 
 const Routes = () => {
   return (
@@ -38,6 +40,8 @@ const Routes = () => {
       <Route exact path="/login" component={Signup} />
       <Route exact path="/meuperfil/edit" component={EditProfile} />
       <Route exact path="/linksuteis" component={Link} />
+      <Route exact path="/perfil/:id" component={ProfileDinamic} />
+      <Route exact path="/campus/:lugar" component={IronWorld} />
     </Switch>
   );
 };
