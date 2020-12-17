@@ -1,12 +1,14 @@
 import React from "react";
 import NoImg from "../../images/no-img.png";
 import LocationOn from "@material-ui/icons/LocationOn";
+import BookmarkIcon from "@material-ui/icons/Bookmark";
 //import LinkIcon from "@material-ui/icons/Link";
 import Mail from "@material-ui/icons/MailOutline";
 import { useState, useEffect } from "react";
 import "./user.css";
 import PermIdentity from "@material-ui/icons/PermIdentity";
 import api from "../../apis/api";
+import { Link } from "react-router-dom";
 
 function User() {
   const [state, setState] = useState([]);
@@ -35,11 +37,13 @@ function User() {
             <img src={person.picture} alt="profile" className="profile-image" />
           </div>
           <PermIdentity color="primary" />
-          <p>{person.name}</p>
+          <Link to={`/perfil/${person.name}`}>
+            <p>{person.name}</p>
+          </Link>
           <LocationOn color="primary" />
-          <p>{person.location}</p>
-          <Mail color="primary" />
-          <p>{person.email}</p>
+          <p>{person.city}</p>
+          <BookmarkIcon color="primary" />
+          <p>{person.cohort}</p>
         </div>
       ))}
     </div>

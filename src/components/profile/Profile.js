@@ -25,23 +25,15 @@ function Profile() {
     about: "",
     linkedin: "",
     github: "",
-    projects: {
-      project1: {
-        name: "",
-        demo: "",
-        github: "",
-      },
-      project2: {
-        name: "",
-        demo: "",
-        github: "",
-      },
-      project3: {
-        name: "",
-        demo: "",
-        github: "",
-      },
-    },
+    project1name: "",
+    project1demo: "",
+    project1url: "",
+    project2name: "",
+    project2demo: "",
+    project2url: "",
+    project3name: "",
+    project3demo: "",
+    project3url: "",
     stacks: [],
   });
 
@@ -63,23 +55,15 @@ function Profile() {
           about: responsePerfil.data.user.about,
           linkedin: responsePerfil.data.user.linkedin,
           github: responsePerfil.data.user.github,
-          projects: {
-            project1: {
-              name: responsePerfil.data.user.projects.project1.name,
-              demo: responsePerfil.data.user.projects.project1.demo,
-              github: responsePerfil.data.user.projects.project1.github,
-            },
-            project2: {
-              name: responsePerfil.data.user.projects.project2.name,
-              demo: responsePerfil.data.user.projects.project2.demo,
-              github: responsePerfil.data.user.projects.project2.github,
-            },
-            project3: {
-              name: responsePerfil.data.user.projects.project3.name,
-              demo: responsePerfil.data.user.projects.project3.demo,
-              github: responsePerfil.data.user.projects.project3.github,
-            },
-          },
+          project1name: responsePerfil.data.user.project1name,
+          project1demo: responsePerfil.data.user.project1demo,
+          project1url: responsePerfil.data.user.project1url,
+          project2name: responsePerfil.data.user.project2name,
+          project2demo: responsePerfil.data.user.project2demo,
+          project2url: responsePerfil.data.user.project2url,
+          project3name: responsePerfil.data.user.project3name,
+          project3demo: responsePerfil.data.user.project3demo,
+          project3url: responsePerfil.data.user.project3url,
           stacks: responsePerfil.data.user.stacks,
         });
       } catch (err) {
@@ -103,7 +87,7 @@ function Profile() {
         linkedin={profile.linkedin}
         github={profile.github}
       />
-      <Projects projects={profile.projects} />
+      <Projects projects={profile} />
       <Technologies stacks={profile.stacks} />
       <Edit />
     </div>

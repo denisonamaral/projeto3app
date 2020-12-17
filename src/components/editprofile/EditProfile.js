@@ -21,23 +21,15 @@ function EditProfile(props) {
     about: "",
     linkedin: "",
     github: "",
-    projects: {
-      project1: {
-        name: "",
-        demo: "",
-        github: "",
-      },
-      project2: {
-        name: "",
-        demo: "",
-        github: "",
-      },
-      project3: {
-        name: "",
-        demo: "",
-        github: "",
-      },
-    },
+    project1name: "",
+    project1demo: "",
+    project1url: "",
+    project2name: "",
+    project2demo: "",
+    project2url: "",
+    project3name: "",
+    project3demo: "",
+    project3url: "",
     stacks: [],
   });
   console.log("EDITPROFILE :", editProfile);
@@ -56,23 +48,15 @@ function EditProfile(props) {
           about: response.data.user.about,
           linkedin: response.data.user.linkedin,
           github: response.data.user.github,
-          projects: {
-            project1: {
-              name: response.data.user.projects.project1.name,
-              demo: response.data.user.projects.project1.demo,
-              github: response.data.user.projects.project1.github,
-            },
-            project2: {
-              name: response.data.user.projects.project2.name,
-              demo: response.data.user.projects.project2.demo,
-              github: response.data.user.projects.project2.github,
-            },
-            project3: {
-              name: response.data.user.projects.project3.name,
-              demo: response.data.user.projects.project3.demo,
-              github: response.data.user.projects.project3.github,
-            },
-          },
+          project1name: response.data.user.project1name,
+          project1demo: response.data.user.project1demo,
+          project1url: response.data.user.project1url,
+          project2name: response.data.user.project2name,
+          project2demo: response.data.user.project2demo,
+          project2url: response.data.user.project2url,
+          project3name: response.data.user.project3name,
+          project3demo: response.data.user.project3demo,
+          project3url: response.data.user.project3url,
           stacks: response.data.user.stacks,
         });
       } catch (err) {
@@ -190,14 +174,53 @@ function EditProfile(props) {
         placeholder="URL Github"
       />
       <Input
-        name="project1"
+        name="project1name"
         onChange={onChangeForm}
-        // value={editProfile.projects.project1.demo}
         label="Projeto #1"
+        placeholder="Name projeto 1"
+      />
+      <Input
+        name="project1demo"
+        onChange={onChangeForm}
+        placeholder="Demo projeto 1"
+      />
+      <Input
+        name="project1url"
+        onChange={onChangeForm}
         placeholder="URL projeto 1"
       />
-      <Input label="Projeto #2" placeholder="URL projeto 2" />
-      <Input label="Projeto #3" placeholder="URL projeto 3" />
+      <Input
+        name="project2name"
+        onChange={onChangeForm}
+        label="Projeto #2"
+        placeholder="Name projeto 2"
+      />
+      <Input
+        name="project2demo"
+        onChange={onChangeForm}
+        placeholder="Demo projeto 2"
+      />
+      <Input
+        name="project2url"
+        onChange={onChangeForm}
+        placeholder="URL projeto 2"
+      />
+      <Input
+        name="project3name"
+        onChange={onChangeForm}
+        label="Projeto #3"
+        placeholder="Name projeto 3"
+      />
+      <Input
+        name="project3demo"
+        onChange={onChangeForm}
+        placeholder="Demo projeto 3"
+      />
+      <Input
+        name="project3url"
+        onChange={onChangeForm}
+        placeholder="URL projeto 3"
+      />
       <h6>
         <strong>Edit Stacks</strong>
       </h6>

@@ -14,6 +14,10 @@ function LinkComponent(props) {
 
   async function DeletarBancoDados() {
     const deletarBanco = await api.delete(`/deletelink/${props.name}`);
+    const pegarLinks = await api.get("/linksall");
+    // console.log("oi");
+    // console.log("NAO CONSOLA", pegarLinks.data.pegaAllLinks);
+    props.setYYY(pegarLinks.data.pegaAllLinks);
   }
 
   return (
