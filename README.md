@@ -5,7 +5,7 @@ Esse repositório inclui o lado do cliente desse projeto:
 
 ## Slides de apresentaçáo
 
-See our slide presentation [here](https://www.canva.com/design/DAEQbC7p6HY/yKTA2vEU-G-x25eGnpZhBA/view?utm_content=DAEQbC7p6HY&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
+Veja os slides de apresentçáo [aqui](https://www.canva.com/design/DAEQbC7p6HY/yKTA2vEU-G-x25eGnpZhBA/view?utm_content=DAEQbC7p6HY&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
 
 ## Autores do projeto -
 
