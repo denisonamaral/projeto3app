@@ -6,6 +6,7 @@ body {
   padding: 0;
   font-size: 16px;
   font-family: "Roboto Mono";
+  background-image: url ("../../images/bkground.jpg");
 }
 
 h1,

@@ -2,6 +2,11 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import api from "../../apis/api";
 
+import Form from "react-bootstrap/Form";
+import Button from "react-bootstrap/Button";
+import Container from "react-bootstrap/Container";
+import Image from "react-bootstrap/Image";
+
 function Signup(props) {
   const [state, setState] = useState({ name: "", password: "", email: "" });
   const [errors, setErrors] = useState({
@@ -31,56 +36,64 @@ function Signup(props) {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
-      <h1 className="text-center">Signup!</h1>
-
-      <div className="text-center form-group">
-        <label htmlFor="signupFormName">Name</label>
-        <input
-          type="text"
-          name="name"
-          id="signupFormName"
-          value={state.name}
-          error={errors.name}
-          onChange={handleChange}
-        />
-      </div>
-
-      <div className="text-center form-group">
-        <label htmlFor="signupFormEmail">E-mail Address</label>
-        <input
-          type="email"
-          name="email"
-          id="signupFormEmail"
-          value={state.email}
-          error={errors.email}
-          onChange={handleChange}
-        />
-      </div>
-
-      <div className="text-center form-group">
-        <label htmlFor="signupFormPassword">Password</label>
-        <input
-          type="password"
-          name="password"
-          id="signupFormPassword"
-          value={state.password}
-          error={errors.password}
-          onChange={handleChange}
-        />
-      </div>
-
-      <div className="text-center form-group">
-        <button className="btn btn-primary" type="submit">
-          Signup!
-        </button>
-      </div>
-      <div className="text-center form-group">
-        <Link to="/auth/login">
-          Already have an account? Click here to login.
+    <Container className="text-black container--center">
+      <form onSubmit={handleSubmit}>
+        <Link to="/">
+          <Image
+            src="https://www.ironhack.com/assets/icons/ironhack_logos/logo.svg"
+            height="200"
+            width="100"
+            fluid
+          />
         </Link>
-      </div>
-    </form>
+
+        <Form onSubmit={handleSubmit}>
+          <Form.Group>
+            <Form.Label></Form.Label>
+            <Form.Control
+              placeholder="Name"
+              name="name"
+              value={state.name}
+              onChange={handleChange}
+            />
+          </Form.Group>
+        </Form>
+
+        <Form onSubmit={handleSubmit}>
+          <Form.Group>
+            <Form.Label></Form.Label>
+            <Form.Control
+              placeholder="Email"
+              name="email"
+              value={state.email}
+              onChange={handleChange}
+            />
+          </Form.Group>
+        </Form>
+
+        <Form.Group>
+          <Form.Label></Form.Label>
+          <Form.Control
+            placeholder="Password"
+            name="password"
+            type="password"
+            value={state.password}
+            onChange={handleChange}
+          />
+        </Form.Group>
+
+        <div className="text-center form-group">
+          <Button className="btn btn-dark" type="submit">
+            Signup!
+          </Button>
+        </div>
+        <div className="text-center form-group">
+          <Link to="/auth/login">
+            Already have an account? Click here to login.
+          </Link>
+        </div>
+      </form>
+    </Container>
   );
 }
 
