@@ -1,0 +1,10 @@
+.showlinks {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: stretch;
+  overflow: scroll;
+  max-height: 80vh;
+}
