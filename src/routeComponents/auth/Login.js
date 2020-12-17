@@ -2,7 +2,13 @@ import React, { useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import api from "../../apis/api";
 
+import Form from "react-bootstrap/Form";
+import Button from "react-bootstrap/Button";
+import Container from "react-bootstrap/Container";
+import Image from "react-bootstrap/Image";
+
 import { AuthContext } from "../../contexts/authContext";
+import { Colorize } from "@material-ui/icons";
 
 function Login(props) {
   const authContext = useContext(AuthContext);
@@ -32,6 +38,7 @@ function Login(props) {
         "loggedInUser",
         JSON.stringify({ ...response.data })
       );
+
       setErrors({ password: "", email: "" });
       props.history.push("/book/all"); // arrumar essa linha
     } catch (err) {
@@ -41,42 +48,50 @@ function Login(props) {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
-      <h1 className="text-center">Login</h1>
-
-      <div className="text-center form-group">
-        <label htmlFor="signupFormEmail">E-mail Address</label>
-        <input
-          type="email"
-          name="email"
-          id="signupFormEmail"
-          value={state.email}
-          error={errors.email}
-          onChange={handleChange}
-        />
-      </div>
-
-      <div className="text-center form-group">
-        <label htmlFor="signupFormPassword">Password</label>
-        <input
-          type="password"
-          name="password"
-          id="signupFormPassword"
-          value={state.password}
-          error={errors.password}
-          onChange={handleChange}
-        />
-      </div>
-
-      <div className="text-center form-group">
-        <button type="submit">Login!</button>
-      </div>
-      <div className="text-center form-group">
-        <Link to="/auth/signup">
-          Don't have an account? Click here to signup!
+    <div className="bg--green">
+      <Container className="text-white container--center">
+        <Link to="/">
+          <Image
+            src="https://www.ironhack.com/assets/icons/ironhack_logos/logo.svg"
+            height="200"
+            width="100"
+            fluid
+          />
         </Link>
-      </div>
-    </form>
+
+        <br />
+        <div className="Login">
+          <br />
+          <h3 style={{ color: "black" }}> Log In into Your Account</h3>
+          <br />
+          <Form onSubmit={handleSubmit}>
+            <Form.Group>
+              <Form.Label>Email Address</Form.Label>
+              <Form.Control
+                placeholder="Email"
+                name="email"
+                value={state.email}
+                onChange={handleChange}
+              />
+            </Form.Group>
+            <Form.Group>
+              <Form.Label>Password</Form.Label>
+              <Form.Control
+                placeholder="Password"
+                name="password"
+                type="password"
+                value={state.password}
+                onChange={handleChange}
+              />
+            </Form.Group>
+            <Button className="btn-dark" type="submit">
+              Log In
+            </Button>
+          </Form>
+          <br />
+        </div>
+      </Container>
+    </div>
   );
 }
 
