@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import "./LinkForm.css";
 import api from "../../../apis/api";
+import { useHistory } from "react-router-dom";
 
-function LinkForm() {
+function LinkForm(props) {
+  const history = useHistory();
   const [state, setState] = useState({
     link: "",
     url: "",
@@ -20,7 +22,10 @@ function LinkForm() {
 
   async function enviarBancoDados() {
     try {
-      const postBancoDeDados = api.post("/linkcreate", state);
+      const postBancoDeDados = await api.post("/linkcreate", state);
+      // const pegarLinks = await api.get("/linksall");
+      // console.log(pegarLinks.data.pegaAllLinks);
+      // props.setXXX(pegarLinks.data.pegaAllLinks);
     } catch (err) {
       console.log("error LinkForm.js catch :", err);
     }
