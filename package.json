@@ -2,6 +2,7 @@
   "name": "react-mongoose",
   "version": "0.1.0",
   "private": true,
+  "proxy": "https://back-end-myironhack.herokuapp.com/api",
   "dependencies": {
     "@emotion/core": "^11.0.0",
     "@emotion/react": "^11.1.2",
