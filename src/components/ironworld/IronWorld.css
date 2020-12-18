@@ -1,6 +1,13 @@
 .iframe {
-  height: 100vh;
-  width: 100vh;
-  overflow: scroll;
-  max-height: 80vh;
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  width: 153vh;
+  border: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  z-index: 99;
+  height: 100%;
 }
