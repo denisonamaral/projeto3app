@@ -7,7 +7,7 @@ import AboutMelinks from "./aboutmelinks/AboutMeLinks";
 function AboutMe(props) {
   return (
     <div className="aboutme">
-      <h3>Sobre mim</h3>
+      <p>Sobre mim</p>
       <p>{props.about}</p>
       <div className="linksAboutMe">
         <AboutMelinks link={props.linkedin} icon={linkedin} name={"LinkedIn"} />

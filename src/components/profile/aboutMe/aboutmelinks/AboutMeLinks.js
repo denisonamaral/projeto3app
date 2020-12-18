@@ -8,7 +8,7 @@ function AboutMeLinks(props) {
         <img src={props.icon} width="25px" height="25px" alt="cards-logo" />
       </a>
 
-      <h5>{props.name}</h5>
+      <p>{props.name}</p>
     </div>
   );
 }

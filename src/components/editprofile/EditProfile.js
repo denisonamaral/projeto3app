@@ -109,8 +109,9 @@ function EditProfile(props) {
   }
 
   return (
+    <container className='profile'>
     <div className="editprofile">
-      <h1>Edit my profile</h1>
+      <p>Edit my profile</p>
       <Input
         name="cover"
         value={editProfile.cover}
@@ -221,9 +222,9 @@ function EditProfile(props) {
         onChange={onChangeForm}
         placeholder="URL projeto 3"
       />
-      <h6>
+      <p>
         <strong>Edit Stacks</strong>
-      </h6>
+      </p>
       <Select
         closeMenuOnSelect={false}
         components={animatedComponents}
@@ -234,6 +235,7 @@ function EditProfile(props) {
       />
       <button onClick={handleSubmit}>EDIÇÃO FINALIZADA</button>
     </div>
+    </container>
   );
 }
 
